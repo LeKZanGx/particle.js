@@ -29,33 +29,33 @@ jQuery(document).ready(function ($) {
         ],
         selector: 'value'
     });
-	$('.wheel').superWheel('onStart',function(results,spinCount,now){
+	$('.superwheel').superWheel('onStart',function(results,spinCount,now){
   console.log(results);
 });
   
   
 // On Step event
-$('.wheel').superWheel('onStep',function(results,slicePercent,circlePercent){
+$('.superwheel').superWheel('onStep',function(results,slicePercent,circlePercent){
   console.log('Spin Current Slice');
   console.log(results);
 });
   
   
 // On Progress event
-$('.wheel').superWheel('onProgress',function(slicePercent,circlePercent){
+$('.superwheel').superWheel('onProgress',function(slicePercent,circlePercent){
   console.log('Spin Progress');
   console.log(slicePercent);
 });
   
   
 // On Complete event
-$('.wheel').superWheel('onComplete',function(results,spinCount,now){
+$('.superwheel').superWheel('onComplete',function(results,spinCount,now){
   console.log('Spin Completed');
   console.log(results);
 });
   
 // On Fail Event
-$('.wheel').superWheel('onFail',function(results,spinCount,now){
+$('.superwheel').superWheel('onFail',function(results,spinCount,now){
   log('Spin Failed, Something wrong in wheel settings');
   log(results);
 });
