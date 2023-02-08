@@ -30,3 +30,10 @@ jQuery(document).ready(function ($) {
         selector: 'value'
     });
 });
+$(document).on('click', '.spin-button' ,function(e){
+	
+  // By default the slice key (value) is captured from wheel parameter "selector"
+  // Start spin and select random winner from slices Where value is "0"
+  $('.superwheel').superWheel('start', 0);
+  
+});
